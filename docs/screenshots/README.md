@@ -1,0 +1,1 @@
+Add genuine project screenshots here before publishing the repository. Suggested files: `landing-page.png`, `reader-story.png`, `writer-editor.png`, and `admin-dashboard.png`. Remove personal data, tokens, and credentials from screenshots.

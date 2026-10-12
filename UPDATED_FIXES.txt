@@ -1,0 +1,22 @@
+ChooseYourPath update notes
+
+Changes included:
+- Added GET /api/admin/stories/{id}/review to AdminController.
+- Kept getStoryForReview exported from src/services/adminService.js and aligned the review page with it.
+- Review endpoint returns story details, scenes, and choices through AdminService.reviewStory().
+- Removed automatic creation of demo reader/writer/admin accounts from Spring Boot and Convex seeders.
+- Sample stories are seeded only when an existing writer account is present.
+- Removed obsolete demo-login CSS and clarified the single persisted scene/illustration description field.
+
+Run frontend from the project root (the folder containing package.json):
+  npm install
+  npm run dev
+
+Run backend from the backend folder:
+  mvn spring-boot:run
+
+Configuration:
+- Root .env should set VITE_API_URL=http://localhost:8080 for the REST backend.
+- The backend needs the existing MySQL database configured in backend/src/main/resources/application.properties.
+
+Note: existing demo user rows in your database are not automatically deleted. The updated seeders will no longer create them. Back up your database before manually removing old rows.

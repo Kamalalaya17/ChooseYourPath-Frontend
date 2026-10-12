@@ -1,0 +1,38 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+!backend/.env.example
+
+# Java / Maven
+**/target/
+*.class
+*.jar
+*.war
+
+# Node / Vite
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+
+# Generated application files
+logs/
+*.log
+src/convex/_generated/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local database exports and backups
+*.sql.gz
+*.dump
+*.bak
+*.backup
